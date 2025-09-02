@@ -1,0 +1,934 @@
+{
+	"info": {
+		"_postman_id": "e7924839-912e-433f-ae7d-9957226363bc",
+		"name": "IETT Web Services",
+		"description": "Postman Collection based on the IETT Web Service Usage Document v1.5. This collection includes requests for all described SOAP web services and methods. All requests are POST with SOAP XML bodies. Adjust namespaces if needed based on actual WSDL.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10656808"
+	},
+	"item": [
+		{
+			"name": "Ulaşım Ana Veri - HatDurakGuzergah",
+			"item": [
+				{
+					"name": "GetDurak_XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetDurak_XML"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetDurak_XML xmlns=\"http://tempuri.org/\">\n      <DurakKodu></DurakKodu>\n    </GetDurak_XML>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/UlasimAnaVeri/HatDurakGuzergah.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"UlasimAnaVeri",
+								"HatDurakGuzergah.asmx"
+							]
+						},
+						"description": "GetDurak_XML - Optional DurakKodu (empty for all stops)"
+					},
+					"response": []
+				},
+				{
+					"name": "GetDurak_json",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetDurak_json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetDurak_json xmlns=\"http://tempuri.org/\">\n      <DurakKodu></DurakKodu>\n    </GetDurak_json>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/UlasimAnaVeri/HatDurakGuzergah.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"UlasimAnaVeri",
+								"HatDurakGuzergah.asmx"
+							]
+						},
+						"description": "GetDurak_json - Optional DurakKodu (empty for all stops)"
+					},
+					"response": []
+				},
+				{
+					"name": "GetGaraj_XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetGaraj_XML"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetGaraj_XML xmlns=\"http://tempuri.org/\" />\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/UlasimAnaVeri/HatDurakGuzergah.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"UlasimAnaVeri",
+								"HatDurakGuzergah.asmx"
+							]
+						},
+						"description": "GetGaraj_XML - All garages"
+					},
+					"response": []
+				},
+				{
+					"name": "GetGaraj_json",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetGaraj_json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetGaraj_json xmlns=\"http://tempuri.org/\" />\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/UlasimAnaVeri/HatDurakGuzergah.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"UlasimAnaVeri",
+								"HatDurakGuzergah.asmx"
+							]
+						},
+						"description": "GetGaraj_json - All garages"
+					},
+					"response": []
+				},
+				{
+					"name": "GetHat_XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetHat_XML"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetHat_XML xmlns=\"http://tempuri.org/\">\n      <HatKodu></HatKodu>\n    </GetHat_XML>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/UlasimAnaVeri/HatDurakGuzergah.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"UlasimAnaVeri",
+								"HatDurakGuzergah.asmx"
+							]
+						},
+						"description": "GetHat_XML - Optional HatKodu (empty for all lines)"
+					},
+					"response": []
+				},
+				{
+					"name": "GetHat_json",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetHat_json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetHat_json xmlns=\"http://tempuri.org/\">\n      <HatKodu></HatKodu>\n    </GetHat_json>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/UlasimAnaVeri/HatDurakGuzergah.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"UlasimAnaVeri",
+								"HatDurakGuzergah.asmx"
+							]
+						},
+						"description": "GetHat_json - Optional HatKodu (empty for all lines)"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ulaşım Dinamik Veri - Duyurular",
+			"item": [
+				{
+					"name": "GetDuyurular_XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetDuyurular_XML"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetDuyurular_XML xmlns=\"http://tempuri.org/\" />\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/UlasimDinamikVeri/Duyurular.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"UlasimDinamikVeri",
+								"Duyurular.asmx"
+							]
+						},
+						"description": "GetDuyurular_XML - Announcements"
+					},
+					"response": []
+				},
+				{
+					"name": "GetDuyurular_json",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetDuyurular_json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetDuyurular_json xmlns=\"http://tempuri.org/\" />\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/UlasimDinamikVeri/Duyurular.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"UlasimDinamikVeri",
+								"Duyurular.asmx"
+							]
+						},
+						"description": "GetDuyurular_json - Announcements"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Filo Yönetim - SeferGerceklesme",
+			"item": [
+				{
+					"name": "GetFiloAracKonum_json",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetFiloAracKonum_json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetFiloAracKonum_json xmlns=\"http://tempuri.org/\" />\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/FiloDurum/SeferGerceklesme.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"FiloDurum",
+								"SeferGerceklesme.asmx"
+							]
+						},
+						"description": "GetFiloAracKonum_json"
+					},
+					"response": []
+				},
+				{
+					"name": "GetBozukSatih_XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetBozukSatih_XML"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetBozukSatih_XML xmlns=\"http://tempuri.org/\" />\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/FiloDurum/SeferGerceklesme.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"FiloDurum",
+								"SeferGerceklesme.asmx"
+							]
+						},
+						"description": "GetBozukSatih_XML"
+					},
+					"response": []
+				},
+				{
+					"name": "GetBozukSatih_json",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetBozukSatih_json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetBozukSatih_json xmlns=\"http://tempuri.org/\" />\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/FiloDurum/SeferGerceklesme.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"FiloDurum",
+								"SeferGerceklesme.asmx"
+							]
+						},
+						"description": "GetBozukSatih_json"
+					},
+					"response": []
+				},
+				{
+					"name": "GetHatOtoKonum_json",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetHatOtoKonum_json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetHatOtoKonum_json xmlns=\"http://tempuri.org/\">\n      <HatNo></HatNo>\n    </GetHatOtoKonum_json>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/FiloDurum/SeferGerceklesme.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"FiloDurum",
+								"SeferGerceklesme.asmx"
+							]
+						},
+						"description": "GetHatOtoKonum_json - Required HatNo"
+					},
+					"response": []
+				},
+				{
+					"name": "GetKazaLokasyon_XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetKazaLokasyon_XML"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetKazaLokasyon_XML xmlns=\"http://tempuri.org/\">\n      <Tarih>yyyy-MM-dd</Tarih>\n    </GetKazaLokasyon_XML>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/FiloDurum/SeferGerceklesme.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"FiloDurum",
+								"SeferGerceklesme.asmx"
+							]
+						},
+						"description": "GetKazaLokasyon_XML - Required Tarih (yyyy-MM-dd)"
+					},
+					"response": []
+				},
+				{
+					"name": "GetKazaLokasyon_json",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetKazaLokasyon_json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetKazaLokasyon_json xmlns=\"http://tempuri.org/\">\n      <Tarih>yyyy-MM-dd</Tarih>\n    </GetKazaLokasyon_json>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/FiloDurum/SeferGerceklesme.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"FiloDurum",
+								"SeferGerceklesme.asmx"
+							]
+						},
+						"description": "GetKazaLokasyon_json - Required Tarih (yyyy-MM-dd)"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "İBB Durak ve Hat Bilgileri - ibb",
+			"item": [
+				{
+					"name": "DurakDetay_GYY",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/DurakDetay_GYY"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <DurakDetay_GYY xmlns=\"http://tempuri.org/\">\n      <hat_kodu></hat_kodu>\n    </DurakDetay_GYY>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/ibb/ibb.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"ibb",
+								"ibb.asmx"
+							]
+						},
+						"description": "DurakDetay_GYY - hat_kodu"
+					},
+					"response": []
+				},
+				{
+					"name": "HatServisi_GYY",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/HatServisi_GYY"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <HatServisi_GYY xmlns=\"http://tempuri.org/\">\n      <hat_kodu></hat_kodu>\n    </HatServisi_GYY>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/ibb/ibb.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"ibb",
+								"ibb.asmx"
+							]
+						},
+						"description": "HatServisi_GYY - hat_kodu"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Planlanan Sefer Saati",
+			"item": [
+				{
+					"name": "GetPlanlananSeferSaati_XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetPlanlananSeferSaati_XML"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetPlanlananSeferSaati_XML xmlns=\"http://tempuri.org/\">\n      <HatKodu></HatKodu>\n    </GetPlanlananSeferSaati_XML>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/UlasimAnaVeri/PlanlananSeferSaati.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"UlasimAnaVeri",
+								"PlanlananSeferSaati.asmx"
+							]
+						},
+						"description": "GetPlanlananSeferSaati_XML - Required HatKodu"
+					},
+					"response": []
+				},
+				{
+					"name": "GetPlanlananSeferSaati_json",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetPlanlananSeferSaati_json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetPlanlananSeferSaati_json xmlns=\"http://tempuri.org/\">\n      <HatKodu></HatKodu>\n    </GetPlanlananSeferSaati_json>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/UlasimAnaVeri/PlanlananSeferSaati.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"UlasimAnaVeri",
+								"PlanlananSeferSaati.asmx"
+							]
+						},
+						"description": "GetPlanlananSeferSaati_json - Required HatKodu"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Araç Özellikleri - AracOzellik",
+			"item": [
+				{
+					"name": "GetAkarYakitToplamLitre_XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetAkarYakitToplamLitre_XML"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetAkarYakitToplamLitre_XML xmlns=\"http://tempuri.org/\">\n      <Yil>2019</Yil>\n      <Ay>1</Ay>\n    </GetAkarYakitToplamLitre_XML>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/AracAnaVeri/AracOzellik.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"AracAnaVeri",
+								"AracOzellik.asmx"
+							]
+						},
+						"description": "GetAkarYakitToplamLitre_XML - Required Yil and Ay (2019+)"
+					},
+					"response": []
+				},
+				{
+					"name": "GetAkarYakitToplamLitre_json",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetAkarYakitToplamLitre_json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetAkarYakitToplamLitre_json xmlns=\"http://tempuri.org/\">\n      <Yil>2019</Yil>\n      <Ay>1</Ay>\n    </GetAkarYakitToplamLitre_json>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/AracAnaVeri/AracOzellik.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"AracAnaVeri",
+								"AracOzellik.asmx"
+							]
+						},
+						"description": "GetAkarYakitToplamLitre_json - Required Yil and Ay (2019+)"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Yolculuk ve Sefer - ibb360",
+			"item": [
+				{
+					"name": "GetIettArsivGorev_XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetIettArsivGorev_XML"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetIettArsivGorev_XML xmlns=\"http://tempuri.org/\">\n      <Tarih>yyyyMMdd</Tarih>\n    </GetIettArsivGorev_XML>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/ibb/ibb360.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"ibb",
+								"ibb360.asmx"
+							]
+						},
+						"description": "GetIettArsivGorev_XML - Required Tarih (yyyyMMdd)"
+					},
+					"response": []
+				},
+				{
+					"name": "GetIettArsivGorev_json",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetIettArsivGorev_json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetIettArsivGorev_json xmlns=\"http://tempuri.org/\">\n      <Tarih>yyyyMMdd</Tarih>\n    </GetIettArsivGorev_json>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/ibb/ibb360.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"ibb",
+								"ibb360.asmx"
+							]
+						},
+						"description": "GetIettArsivGorev_json - Required Tarih (yyyyMMdd)"
+					},
+					"response": []
+				},
+				{
+					"name": "GetIettYolculukHat_XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetIettYolculukHat_XML"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetIettYolculukHat_XML xmlns=\"http://tempuri.org/\">\n      <Tarih>yyyy-MM-dd</Tarih>\n    </GetIettYolculukHat_XML>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/ibb/ibb360.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"ibb",
+								"ibb360.asmx"
+							]
+						},
+						"description": "GetIettYolculukHat_XML - Required Tarih (yyyy-MM-dd), top 50 lines"
+					},
+					"response": []
+				},
+				{
+					"name": "GetIettYolculukHat_json",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/GetIettYolculukHat_json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <GetIettYolculukHat_json xmlns=\"http://tempuri.org/\">\n      <Tarih>yyyy-MM-dd</Tarih>\n    </GetIettYolculukHat_json>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "https://api.ibb.gov.tr/iett/ibb/ibb360.asmx",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ibb",
+								"gov",
+								"tr"
+							],
+							"path": [
+								"iett",
+								"ibb",
+								"ibb360.asmx"
+							]
+						},
+						"description": "GetIettYolculukHat_json - Required Tarih (yyyy-MM-dd), top 50 lines"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
